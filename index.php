@@ -390,7 +390,7 @@ echo '<div id="info">
 </div> <!--info-->';
 }
 
-
+#if ((isset($_REQUEST['givebook']))&&($this->isAuth())){
 if (isset($_REQUEST['givebook'])){
 echo '
 <div id="givebook">
