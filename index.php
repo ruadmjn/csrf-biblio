@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Квалификационная работа</title>
+	<title>Уязвимая библиотека</title>
 	<meta name="author" content="Maxim">
 	<meta charset="UTF-8">
 	<link rel="stylesheet" type"text/css" href="style/style.css">
