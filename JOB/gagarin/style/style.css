@@ -1,0 +1,255 @@
+html, body{
+	margin: 0;
+	padding: 0;
+	padding-top: 30px;
+	font-size: 14px;
+	background: url('img/back.jpg');
+	background-repeat: none;
+	background-size: 120%;
+}
+
+h1{
+	font-size: 1.8em;
+}
+
+select{
+	background:#22AEAA;
+	border: none;
+	font-family: "PF";	
+	color: #ffffff;
+	font-weight: bold;
+}
+
+input{
+	background: #DDE9EE;
+}
+
+
+@font-face{
+	font-family: "PF";
+	src: url(../fonts/my.otf);
+}
+
+#header{
+	width: 100%;
+	height: 100%;
+}
+
+#wripper{
+	width: 80%;
+	margin: 0 auto;
+	height: 700px;
+	background: #DDE9EE;
+	overflow: auto;
+	-webkit-box-shadow: 0px 11px 11px 2px rgba(0,0,0,0.6);
+	-moz-box-shadow: 0px 11px 11px 2px rgba(0,0,0,0.6);
+	box-shadow: 0px 11px 11px 2px rgba(0,0,0,0.6);
+	border-radius: 30px 30px 30px 30px;
+	transition: 0.2s;
+	z-index: 10;
+}
+
+#wripper:hover{
+	background: #DDF8EE;
+}
+
+#titleblock{
+	width: 40%;
+	margin: 0 auto;
+	height: 70px;
+	background: #DDE9EE;
+	overflow: auto;
+	-webkit-box-shadow: 0px 11px 11px 2px rgba(0,0,0,0.6);
+	-moz-box-shadow: 0px 11px 11px 2px rgba(0,0,0,0.6);
+	box-shadow: 0px 11px 11px 2px rgba(0,0,0,0.6);
+	border-radius: 20px 20px 0 0;
+	transition: 0.2s;
+	z-index: 0;
+}
+
+#titleblock:hover{
+	font-size: 1em;
+	width: 50%;
+	background: #DDF8EE;
+}
+
+
+#titleblock h1{
+	font-family: "PF";
+	font-size: 1m;
+}
+
+#content{
+	font-family: "PF";
+	font-size: 1.3em;
+}
+
+.cli{
+	color: #ffffff;
+	font-weight: bold;
+	width: 100%;
+	height: 320px;
+	background: #22AEAA;
+	padding-top: 20px;
+}
+
+.cli_name{
+	margin-left: 20px;
+	width: 50%;
+}
+
+.cli_status{
+	margin-left: 20px;
+	margin-top: 20px;
+}
+
+.cli_wait_for{
+	margin-left: 20px;
+	margin-top: 20px;
+}
+
+.dop{
+	color: #ffffff;
+	font-weight: bold;
+	width: 100%;
+	height: 100px;
+	background: #22AEAA;
+	padding-top: 20px;
+	margin: 0 auto;
+}
+
+.dop_name{
+	margin-left: 20px;
+	width: 30%;
+	text-align: left;
+	margin-top: 5px;
+}
+
+
+
+.meter { 
+height: 15px;  /* Can be anything */
+position: relative;
+margin-top: 10px; /* Just for demo spacing */
+background: #1D7276;
+padding: 5px;
+width: 99.2%;
+
+}
+
+.meter > span {
+display: block;
+height: 90%;
+max-width: 100%;
+border-radius: 5px;
+background:#00C5CD;
+position: relative;
+overflow: hidden;
+}
+
+.meter > span:after, .animate > span > span {
+content: "";
+position: absolute;
+top: 0; 
+left: 0; 
+bottom: 0; 
+right: 0;
+background-image: 
+-webkit-gradient(linear, 0 0, 100% 100%, 
+color-stop(.25, rgba(255, 255, 255, .2)), 
+color-stop(.25, transparent), color-stop(.5, transparent), 
+color-stop(.5, rgba(255, 255, 255, .2)), 
+color-stop(.75, rgba(255, 255, 255, .2)), 
+color-stop(.75, transparent), to(transparent)
+);
+background-image: 
+-moz-linear-gradient(
+-45deg, 
+rgba(255, 255, 255, .2) 25%, 
+transparent 25%, 
+transparent 50%, 
+rgba(255, 255, 255, .2) 50%, 
+rgba(255, 255, 255, .2) 75%, 
+transparent 75%, 
+transparent
+);
+
+z-index: 1;
+overflow: hidden;
+}
+
+
+.meter_min { 
+height: 15px;  /* Can be anything */
+position: relative;
+margin-top: 5px; /* Just for demo spacing */
+background: #1D7276;
+padding: 5px;
+width: 100%;
+}
+
+.meter_min > span {
+display: block;
+height: 90%;
+max-width: 100%;
+border-radius: 5px;
+background:#00C5CD;
+position: relative;
+overflow: hidden;
+}
+
+.meter_min > span:after, .animate > span > span {
+content: "";
+position: absolute;
+top: 0; 
+left: 0; 
+bottom: 0; 
+right: 0;
+background-image: 
+-webkit-gradient(linear, 0 0, 100% 100%, 
+color-stop(.25, rgba(255, 255, 255, .2)), 
+color-stop(.25, transparent), color-stop(.5, transparent), 
+color-stop(.5, rgba(255, 255, 255, .2)), 
+color-stop(.75, rgba(255, 255, 255, .2)), 
+color-stop(.75, transparent), to(transparent)
+);
+background-image: 
+-moz-linear-gradient(
+-45deg, 
+rgba(255, 255, 255, .2) 25%, 
+transparent 25%, 
+transparent 50%, 
+rgba(255, 255, 255, .2) 50%, 
+rgba(255, 255, 255, .2) 75%, 
+transparent 75%, 
+transparent
+);
+
+z-index: 1;
+overflow: hidden;
+}
+		
+.animate > span:after {
+display: none;
+}
+
+.green > span {
+background-color: #179741;
+background-image: -moz-linear-gradient(top, #179741, #179741);
+background-image: -webkit-gradient(linear,left top,left bottom,color-stop(0, #179741),color-stop(1, #179741));
+background-image: -webkit-linear-gradient(#179741, #179741); 
+}
+	
+.container_left{
+	float: left;
+	text-align: center;
+	width: 33%;
+}
+
+
+.stripped_line{
+	width: 100%;
+	height: 10px;
+	background: #9fb44c;
+}
+
